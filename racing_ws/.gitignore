@@ -1,0 +1,47 @@
+# ROS 2 / colcon workspace outputs
+/build/
+/install/
+/log/
+
+# Python cache and packaging artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+
+# CMake / C++ build artifacts
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.exe
+*.out
+*.d
+
+# IDE files at workspace root
+/.idea/
+/.vscode/
+*.iws
+
+# Model binaries under workspace config
+/config/*.bin
+
+# Dataset outputs in obstacle detection package
+/src/racing_obstacle_detection/dataset/raw/**
+/src/racing_obstacle_detection/dataset/raw_images/**
+/src/racing_obstacle_detection/dataset/obstacle/images/**
+/src/racing_obstacle_detection/dataset/obstacle/labels/**
+!/src/racing_obstacle_detection/dataset/raw/place_output_video_here.md
+!/src/racing_obstacle_detection/dataset/raw_images/place_raw_images_here.md
+!/src/racing_obstacle_detection/dataset/obstacle/images/place_images_here.md
+!/src/racing_obstacle_detection/dataset/obstacle/labels/place_labels_here.md
